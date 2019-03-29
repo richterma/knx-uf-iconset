@@ -1,0 +1,47 @@
+# set a few constants
+paddingHorizontal = 10
+paddingVertical = 10
+topPosition = 820
+totalHeight = 1020
+
+
+# put arguments into constants for easy access
+scriptFile = $argv[0]
+fontFile = $argv[1]
+glyphPosition = Strtol($argv[2])
+glyphFile = $argv[3]
+
+
+# start editing font
+Open(fontFile)
+
+Select(0 + glyphPosition)
+Import(glyphFile,0,16)
+RemoveOverlap()
+CorrectDirection()
+
+# get the current position and width/height for gylph
+bounding = GlyphInfo("BBox")
+width = bounding[2] - bounding[0]
+height = bounding[3] - bounding[1]
+
+# scale glyph to fill available space (and make all glyphs the same height)
+factor = ((topPosition - 2 * paddingVertical) / height) * 100
+Scale(factor)
+
+# update the current position and width/height for gylph
+bounding = GlyphInfo("BBox")
+width = bounding[2] - bounding[0]
+height = bounding[3] - bounding[1]
+
+# calculate how we must move the glyph to have it "top-left"
+deltaX = -bounding[0] + paddingHorizontal
+deltaY = (topPosition - paddingVertical - bounding[3])
+Move(deltaX,deltaY)
+
+# update right bearing
+SetRBearing(paddingHorizontal)
+
+RoundToInt()
+
+Generate(fontFile)
