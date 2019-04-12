@@ -955,6 +955,7 @@ break > %FULLLOGPATH%
 ::CALL :UPDATEICON 60561 light_light_dim.svg -229 189 182 127
 ::CALL :UPDATEICON 60562 sani_heating_small.svg -192 188 236 127
 ::CALL :UPDATEICON 60563 sani_irrigation_small.svg -189 213 10 132
+::CALL :UPDATEICON 60564 fts_shutter_0.svg -188 280 11 178
 
 
 

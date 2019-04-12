@@ -915,4 +915,5 @@
   <GlyphInfo FileName="light_light_dim.svg" CharId="60561" GroupId="light_light_dim" />
   <GlyphInfo FileName="sani_heating_small.svg" CharId="60562" GroupId="sani_heating_small" />
   <GlyphInfo FileName="sani_irrigation_small.svg" CharId="60563" GroupId="sani_irrigation_small" />
+  <GlyphInfo FileName="fts_shutter_0.svg" CharId="60564" GroupId="fts_shutter" />
 </ArrayOfGlyphInfo>
