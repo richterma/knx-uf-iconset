@@ -1,0 +1,5 @@
+## generated icon font subfolder
+/tools/IconFontGenerator/output/
+
+## generated, "optimized" svg files
+optimized_svg/

@@ -1,0 +1,13 @@
+# put arguments into constants for easy access
+scriptFile = $argv[0]
+fontFile = $argv[1]
+fontName = $argv[2]
+
+
+# create a new font
+New()
+Reencode("UnicodeFull")
+ScaleToEm(1024)
+SetFontNames(fontName,fontName,fontName)
+
+Generate(fontFile)

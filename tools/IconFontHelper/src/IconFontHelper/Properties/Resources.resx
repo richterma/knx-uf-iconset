@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BatchFooter" xml:space="preserve">
+    <value>:: ========== FUNCTIONS ==========
+EXIT /B
+
+:UPDATEICON
+	CALL :NORMALIZEPATH %SVGDIRECTORY%%2
+	SET SVG=%RETVAL%
+	ECHO Adding icon number %1: %2
+	ECHO Number %1: %2&gt;&gt; %FULLLOGPATH%
+	%PROGRAMPATH% -lang=ff -script fontforge/updateGlyph.ff %FULLFONTPATH% %SVG% %1 %3 %4 %5 %6 &gt; NUL 2&gt;&amp;1
+
+	EXIT /B
+
+:NORMALIZEPATH
+:: resolve relative to absolute path.
+	SET RETVAL=%~dpfn1
+	EXIT /B</value>
+  </data>
+  <data name="BatchHeader" xml:space="preserve">
+    <value>@ECHO off
+
+:: configuration options
+SET PROGRAMPATH="C:\Program Files (x86)\FontForgeBuilds\bin\fontforge.exe"
+::Examples: "\.", "..\icon_font\", ".\output\", "D:\absolute\path\without\spaces\"
+SET OUTDIRECTORY=".\output\"
+SET FONTNAME=KNXUF-IconFont
+SET FONTNAMETYPE=.ttf
+SET LOGFILETYPE=.log
+
+:: actual script
+IF EXIST ..\..\optimized_svg\raw_svg\ (
+	SET SVGDIRECTORY=..\..\optimized_svg\raw_svg\
+) ELSE (
+	IF EXIST ..\..\optimized_svg\ (
+		SET SVGDIRECTORY=..\..\optimized_svg\
+	) ELSE (
+		SET SVGDIRECTORY=..\..\raw_svg\
+		ECHO It looks like you didn't optimize the svg files.
+		ECHO Some of the icons will not display correctly without previous optimization.
+		ECHO Check the readme for further information.
+		ECHO.
+		ECHO Press any button to continue with unoptimized files.
+		ECHO.
+		PAUSE
+	)
+)
+
+:: resolve absolute path of font directory.
+CALL :NORMALIZEPATH %OUTDIRECTORY%
+SET FULLDIR=%RETVAL%
+mkdir %FULLDIR% &gt; NUL 2&gt;&amp;1
+SET FULLFONTPATH=%FULLDIR%%FONTNAME%%FONTNAMETYPE%
+SET FULLLOGPATH=%FULLDIR%%FONTNAME%%LOGFILETYPE%
+
+ECHO Creating output file: %FULLFONTPATH%
+break &gt; %FULLLOGPATH%
+
+:: create empty font. If we need to _just_ update an existing file, remove this line.
+%PROGRAMPATH% -lang=ff -script fontforge/createEmptyFont.ff %FULLFONTPATH% %FONTNAME% &gt; NUL 2&gt;&amp;1
+
+:: update font with each single svg.</value>
+  </data>
+  <data name="LoggingContent" xml:space="preserve">
+    <value>#icon {0}
+Select({0})
+Import("{1}",0,16)
+RemoveOverlap()
+CorrectDirection()
+
+bounding = GlyphInfo("BBox")
+height = bounding[3] - bounding[1]
+factor = ((topPosition - 2 * paddingVertical) / height) * 100
+#Scale(factor)
+
+bounding = GlyphInfo("BBox")
+deltaX = -bounding[0] + paddingHorizontal
+deltaY = (topPosition - paddingVertical - bounding[3])
+width = bounding[2] + paddingHorizontal + 10
+
+logText = StrJoin(["GLYPHDETAILS",ToString({0}),ToString(deltaX),ToString(deltaY),ToString(width),ToString(factor)],";")
+Print(logText)
+#WriteStringToFile(logText + "\\n", logFile, 2)</value>
+  </data>
+  <data name="LoggingHeader" xml:space="preserve">
+    <value># set a few constants
+scale = 1024
+paddingHorizontal = 10
+paddingVertical = 10
+topPosition = 820
+
+# create a new font
+New()
+Reencode("UnicodeFull")
+ScaleToEm(scale)</value>
+  </data>
+</root>

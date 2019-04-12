@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="IconFontHelper.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FontForgeExecutable" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Program Files (x86)\FontForgeBuilds\bin\fontforge.exe</Value>
+    </Setting>
+    <Setting Name="SvgDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">..\..\..\..\..\..\optimized_svg</Value>
+    </Setting>
+    <Setting Name="BatchFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">..\..\..\..\..\IconFontGenerator\GenerateIconFont.bat</Value>
+    </Setting>
+    <Setting Name="GlyphList" Type="System.String" Scope="User">
+      <Value Profile="(Default)">..\..\..\..\..\IconFontHelper\GlyphList.xml</Value>
+    </Setting>
+    <Setting Name="FirstGlyphPosition" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">59648</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
