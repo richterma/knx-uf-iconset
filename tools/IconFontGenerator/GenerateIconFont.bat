@@ -39,7 +39,10 @@ break > %FULLLOGPATH%
 :: create empty font. If we need to _just_ update an existing file, remove this line.
 %PROGRAMPATH% -lang=ff -script fontforge/createEmptyFont.ff %FULLFONTPATH% %FONTNAME% > NUL 2>&1
 
+
 :: update font with each single svg.
+:: params: [glyph position], [svg], [x displacement], [y displacement], [right bearing position], [scaling factor (unused)]
+
 ::CALL :UPDATEICON 59648 audio_audio.svg -252 188 10 127
 ::CALL :UPDATEICON 59649 audio_eject.svg -257 223 10 162
 ::CALL :UPDATEICON 59650 audio_eq.svg -216 190 10 127

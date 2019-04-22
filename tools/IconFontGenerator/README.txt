@@ -17,3 +17,10 @@ Usage:
 1. Make sure prerequisites are met and (optionally) run all icons trough svgcleaner.
 2. Edit the script file to configure the correct FontForge path.
 3. By default, the script will not include any icon in the font. To include icons, remove the comments (the "::" at the begonning of each line) from each icon you want to include in the font. You should only include the required files to minimize font size and loading time.
+
+
+Remarks:
+Since the process is split into two parts (creating a font file and adding glyphs one by one), it is possible to modify it to use existing fonts.
+Just skip the first part of the process.
+
+To add further icons to the font, use the "IconFontHelper" to automatically create an updated batch including additional parameters for positioning.
