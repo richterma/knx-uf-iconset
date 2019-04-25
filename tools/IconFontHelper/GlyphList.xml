@@ -188,8 +188,8 @@
   <GlyphInfo FileName="control_switch_m_4.svg" CharId="59821" GroupId="control_switch" />
   <GlyphInfo FileName="control_switch_m_8.svg" CharId="59822" GroupId="" />
   <GlyphInfo FileName="control_x.svg" CharId="59823" GroupId="" />
-  <GlyphInfo FileName="control_zoom_in.svg" CharId="59824" GroupId="" />
-  <GlyphInfo FileName="control_zoom_out.svg" CharId="59825" GroupId="" />
+  <GlyphInfo FileName="control_zoom_in.svg" CharId="59824" GroupId="control_zoom_in" />
+  <GlyphInfo FileName="control_zoom_out.svg" CharId="59825" GroupId="control_zoom_out" />
   <GlyphInfo FileName="edit_collapse.svg" CharId="59826" GroupId="" />
   <GlyphInfo FileName="edit_copy.svg" CharId="59827" GroupId="edit_copy" />
   <GlyphInfo FileName="edit_cut.svg" CharId="59828" GroupId="" />
@@ -916,4 +916,6 @@
   <GlyphInfo FileName="sani_heating_small.svg" CharId="60562" GroupId="sani_heating_small" />
   <GlyphInfo FileName="sani_irrigation_small.svg" CharId="60563" GroupId="sani_irrigation_small" />
   <GlyphInfo FileName="fts_shutter_0.svg" CharId="60564" GroupId="fts_shutter" />
+  <GlyphInfo FileName="control_zoom_in_alt.svg" CharId="60565" GroupId="control_zoom_in" />
+  <GlyphInfo FileName="control_zoom_out_alt.svg" CharId="60566" GroupId="control_zoom_out" />
 </ArrayOfGlyphInfo>
