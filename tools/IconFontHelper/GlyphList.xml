@@ -918,4 +918,5 @@
   <GlyphInfo FileName="fts_shutter_0.svg" CharId="60564" GroupId="fts_shutter" />
   <GlyphInfo FileName="control_zoom_in_alt.svg" CharId="60565" GroupId="control_zoom_in" />
   <GlyphInfo FileName="control_zoom_out_alt.svg" CharId="60566" GroupId="control_zoom_out" />
+  <GlyphInfo FileName="automatic.svg" CharId="60567" GroupId="" />
 </ArrayOfGlyphInfo>
