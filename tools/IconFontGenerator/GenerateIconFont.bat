@@ -961,7 +961,6 @@ break > %FULLLOGPATH%
 ::CALL :UPDATEICON 60564 fts_shutter_0.svg -188 280 11 178
 ::CALL :UPDATEICON 60565 control_zoom_in_alt.svg -190 192 10 128
 ::CALL :UPDATEICON 60566 control_zoom_out_alt.svg -190 192 10 128
-::CALL :UPDATEICON 60567 automatic.svg -343 461 10 258
 
 
 
