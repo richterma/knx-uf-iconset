@@ -3,7 +3,7 @@
 :: configuration options
 SET PROGRAMPATH="C:\Program Files (x86)\FontForgeBuilds\bin\fontforge.exe"
 ::Examples: "\.", "..\icon_font\", ".\output\", "D:\absolute\path\without\spaces\"
-SET OUTDIRECTORY="C:\Users\mkhri\Desktop\edomi\visu\quellen\Schriftarten\"
+SET OUTDIRECTORY="C:\Users\mkhri\Desktop\sortieren\edomi\visu\quellen\Schriftarten\"
 SET FONTNAME=KNXUF-IconFont
 SET FONTNAMETYPE=.ttf
 SET LOGFILETYPE=.log
@@ -178,14 +178,14 @@ CALL :UPDATEICON 59669 audio_volume_mute.svg -190 254 13 153
 ::CALL :UPDATEICON 59780 control_building_s_int_og.svg -188 190 10 127
 ::CALL :UPDATEICON 59781 control_building_s_kg.svg -188 190 10 127
 ::CALL :UPDATEICON 59782 control_building_s_og.svg -188 190 10 127
-CALL :UPDATEICON 59783 control_building_s_okg_all.svg -188 188 10 127
+::CALL :UPDATEICON 59783 control_building_s_okg_all.svg -188 188 10 127
 ::CALL :UPDATEICON 59784 control_building_s_okg_dg.svg -188 188 10 127
-CALL :UPDATEICON 59785 control_building_s_okg_eg.svg -188 188 10 127
+::CALL :UPDATEICON 59785 control_building_s_okg_eg.svg -188 188 10 127
 ::CALL :UPDATEICON 59786 control_building_s_okg_int_all.svg -188 188 10 127
 ::CALL :UPDATEICON 59787 control_building_s_okg_int_dg.svg -188 188 10 127
 ::CALL :UPDATEICON 59788 control_building_s_okg_int_eg.svg -188 188 10 127
 ::CALL :UPDATEICON 59789 control_building_s_okg_int_og.svg -188 188 10 127
-CALL :UPDATEICON 59790 control_building_s_okg_og.svg -188 188 10 127
+::CALL :UPDATEICON 59790 control_building_s_okg_og.svg -188 188 10 127
 CALL :UPDATEICON 59791 control_cancel.svg -233 188 45 139
 ::CALL :UPDATEICON 59792 control_centr_arrow_down_left.svg -294 290 10 191
 ::CALL :UPDATEICON 59793 control_centr_arrow_down_right.svg -296 290 10 191
@@ -227,7 +227,7 @@ CALL :UPDATEICON 59808 control_home.svg -233 188 45 139
 ::CALL :UPDATEICON 59829 edit_delete.svg -187 188 11 127
 ::CALL :UPDATEICON 59830 edit_expand.svg -186 187 10 126
 ::CALL :UPDATEICON 59831 edit_favorites.svg -189 220 10 142
-::CALL :UPDATEICON 59832 edit_input_numeric.svg -188 190 10 127
+CALL :UPDATEICON 59832 edit_input_numeric.svg -188 190 10 127
 ::CALL :UPDATEICON 59833 edit_numeric_0.svg -188 188 10 127
 ::CALL :UPDATEICON 59834 edit_numeric_1.svg -188 188 10 127
 ::CALL :UPDATEICON 59835 edit_numeric_2.svg -188 188 10 127
@@ -241,10 +241,10 @@ CALL :UPDATEICON 59808 control_home.svg -233 188 45 139
 ::CALL :UPDATEICON 59843 edit_open.svg -189 248 10 155
 ::CALL :UPDATEICON 59844 edit_paste.svg -187 188 10 127
 CALL :UPDATEICON 59845 edit_save.svg -189 188 10 127
-CALL :UPDATEICON 59846 edit_settings.svg -219 189 10 127
+::CALL :UPDATEICON 59846 edit_settings.svg -219 189 10 127
 ::CALL :UPDATEICON 59847 edit_sort.svg -188 188 10 127
 ::CALL :UPDATEICON 59848 fts_awning.svg -190 198 10 129
-CALL :UPDATEICON 59849 fts_blade_arc_-10.svg -191 187 129 127
+::CALL :UPDATEICON 59849 fts_blade_arc_-10.svg -191 187 129 127
 ::CALL :UPDATEICON 59850 fts_blade_arc_-20.svg -191 187 139 127
 ::CALL :UPDATEICON 59851 fts_blade_arc_-30.svg -191 187 154 127
 ::CALL :UPDATEICON 59852 fts_blade_arc_-40.svg -191 187 170 127
@@ -312,7 +312,7 @@ CALL :UPDATEICON 59849 fts_blade_arc_-10.svg -191 187 129 127
 ::CALL :UPDATEICON 59914 fts_entrance_boom_closed.svg -189 190 10 127
 ::CALL :UPDATEICON 59915 fts_entrance_boom_open.svg -189 190 10 127
 ::CALL :UPDATEICON 59917 fts_frontdoor.svg -338 189 10 127
-::CALL :UPDATEICON 59918 fts_garage_door_10.svg -190 267 10 162
+CALL :UPDATEICON 59918 fts_garage_door_10.svg -190 267 10 162
 ::CALL :UPDATEICON 59919 fts_garage_door_20.svg -190 267 10 162
 ::CALL :UPDATEICON 59920 fts_garage_door_30.svg -190 267 10 162
 ::CALL :UPDATEICON 59921 fts_garage_door_40.svg -190 267 10 162
@@ -321,8 +321,8 @@ CALL :UPDATEICON 59849 fts_blade_arc_-10.svg -191 187 129 127
 ::CALL :UPDATEICON 59924 fts_garage_door_70.svg -190 267 10 162
 ::CALL :UPDATEICON 59925 fts_garage_door_80.svg -190 267 10 162
 ::CALL :UPDATEICON 59926 fts_garage_door_90.svg -190 267 10 162
-::CALL :UPDATEICON 59927 fts_garage_door_100.svg -190 267 10 162
-CALL :UPDATEICON 59928 fts_garage.svg -190 267 10 162
+CALL :UPDATEICON 59927 fts_garage_door_100.svg -190 267 10 162
+::CALL :UPDATEICON 59928 fts_garage.svg -190 267 10 162
 ::CALL :UPDATEICON 59929 fts_light_dome_open.svg -187 188 10 160
 ::CALL :UPDATEICON 59930 fts_light_dome.svg -187 188 10 160
 CALL :UPDATEICON 59931 fts_shutter_10.svg -188 280 11 178
@@ -561,9 +561,9 @@ CALL :UPDATEICON 60088 light_light_dim_100.svg -229 189 10 127
 ::CALL :UPDATEICON 60164 message_caution.svg -188 188 10 127
 ::CALL :UPDATEICON 60165 message_empty.svg -187 190 10 127
 ::CALL :UPDATEICON 60166 message_error.svg -187 190 10 127
-::CALL :UPDATEICON 60167 message_garbage_2.svg -302 226 10 135
+CALL :UPDATEICON 60167 message_garbage_2.svg -302 226 10 135
 ::CALL :UPDATEICON 60168 message_garbage_3.svg -308 278 10 150
-::CALL :UPDATEICON 60169 message_garbage_collection.svg -191 224 10 134
+CALL :UPDATEICON 60169 message_garbage_collection.svg -191 224 10 134
 ::CALL :UPDATEICON 60170 message_garbage.svg -316 192 10 127
 ::CALL :UPDATEICON 60171 message_help.svg -187 190 10 127
 ::CALL :UPDATEICON 60172 message_info.svg -187 190 10 127
@@ -625,7 +625,7 @@ CALL :UPDATEICON 60186 message_presence.svg -192 189 13 127
 ::CALL :UPDATEICON 60228 sani_heating_automatic.svg -192 188 13 127
 ::CALL :UPDATEICON 60229 sani_heating_manual.svg -192 188 29 127
 ::CALL :UPDATEICON 60230 sani_heating_temp.svg -192 188 10 127
-CALL :UPDATEICON 60231 sani_heating.svg -186 187 10 127
+::CALL :UPDATEICON 60231 sani_heating.svg -186 187 10 127
 ::CALL :UPDATEICON 60232 sani_irrigation_pop_up_off.svg -188 284 10 149
 ::CALL :UPDATEICON 60233 sani_irrigation_pop_up_on.svg -188 284 10 149
 ::CALL :UPDATEICON 60234 sani_irrigation.svg -189 284 10 192
@@ -655,11 +655,11 @@ CALL :UPDATEICON 60231 sani_heating.svg -186 187 10 127
 ::CALL :UPDATEICON 60258 scene_aquarium.svg -188 291 10 188
 ::CALL :UPDATEICON 60259 scene_baby.svg -188 190 10 128
 ::CALL :UPDATEICON 60260 scene_baking_oven.svg -188 270 10 171
-CALL :UPDATEICON 60261 scene_bath.svg -188 316 10 159
+::CALL :UPDATEICON 60261 scene_bath.svg -188 316 10 159
 ::CALL :UPDATEICON 60262 scene_bathroom.svg -190 189 10 127
 ::CALL :UPDATEICON 60263 scene_beer.svg -276 199 10 129
 ::CALL :UPDATEICON 60264 scene_cat.svg -186 252 10 142
-CALL :UPDATEICON 60265 scene_childs_room.svg -188 190 10 127
+::CALL :UPDATEICON 60265 scene_childs_room.svg -188 190 10 127
 ::CALL :UPDATEICON 60266 scene_cinema.svg -190 257 10 159
 ::CALL :UPDATEICON 60267 scene_cleaning.svg -238 191 10 127
 ::CALL :UPDATEICON 60268 scene_clothes_dryer.svg -268 188 10 127
@@ -668,15 +668,15 @@ CALL :UPDATEICON 60265 scene_childs_room.svg -188 190 10 127
 ::CALL :UPDATEICON 60271 scene_cooking_alternat.svg -193 189 10 127
 ::CALL :UPDATEICON 60272 scene_cooking_hob.svg -188 191 10 127
 ::CALL :UPDATEICON 60273 scene_cooking.svg -213 215 10 138
-CALL :UPDATEICON 60274 scene_corridor.svg -187 188 10 127
+::CALL :UPDATEICON 60274 scene_corridor.svg -187 188 10 127
 ::CALL :UPDATEICON 60275 scene_cubby.svg -216 213 10 132
 ::CALL :UPDATEICON 60276 scene_day.svg -189 188 10 142
 ::CALL :UPDATEICON 60277 scene_deckchair.svg -194 362 10 281
-CALL :UPDATEICON 60278 scene_dinner.svg -187 224 10 142
+::CALL :UPDATEICON 60278 scene_dinner.svg -187 224 10 142
 ::CALL :UPDATEICON 60279 scene_dishwasher.svg -268 188 10 127
 ::CALL :UPDATEICON 60280 scene_dog.svg -185 352 10 264
 ::CALL :UPDATEICON 60281 scene_dressing_room_alternat.svg -218 188 10 127
-CALL :UPDATEICON 60282 scene_dressing_room.svg -188 189 10 127
+::CALL :UPDATEICON 60282 scene_dressing_room.svg -188 189 10 127
 ::CALL :UPDATEICON 60283 scene_drink.svg -322 189 10 127
 ::CALL :UPDATEICON 60284 scene_fitness_2.svg -189 388 10 345
 ::CALL :UPDATEICON 60285 scene_fitness.svg -187 189 10 127
@@ -685,25 +685,25 @@ CALL :UPDATEICON 60282 scene_dressing_room.svg -188 189 10 127
 ::CALL :UPDATEICON 60288 scene_fountain.svg -188 314 10 158
 ::CALL :UPDATEICON 60289 scene_freezer.svg -327 186 10 127
 ::CALL :UPDATEICON 60290 scene_gaming.svg -188 189 10 162
-CALL :UPDATEICON 60291 scene_garden.svg -188 267 10 145
+::CALL :UPDATEICON 60291 scene_garden.svg -188 267 10 145
 ::CALL :UPDATEICON 60292 scene_gas_station.svg -306 190 10 127
 ::CALL :UPDATEICON 60293 scene_hall_alternat.svg -189 187 10 127
-CALL :UPDATEICON 60294 scene_hall.svg -189 190 10 127
+::CALL :UPDATEICON 60294 scene_hall.svg -189 190 10 127
 ::CALL :UPDATEICON 60295 scene_ironing.svg -189 293 10 194
 ::CALL :UPDATEICON 60296 scene_jukebox.svg -304 188 10 127
 ::CALL :UPDATEICON 60297 scene_keyboard.svg -187 188 10 128
 ::CALL :UPDATEICON 60298 scene_kitchen_hood.svg -189 187 10 127
 ::CALL :UPDATEICON 60299 scene_kitchen_sink.svg -187 330 10 231
-CALL :UPDATEICON 60300 scene_laundry_room_fem.svg -187 189 10 127
+::CALL :UPDATEICON 60300 scene_laundry_room_fem.svg -187 189 10 127
 ::CALL :UPDATEICON 60301 scene_laundry_room.svg -187 189 10 127
 ::CALL :UPDATEICON 60302 scene_living.svg -188 335 10 238
-CALL :UPDATEICON 60303 scene_livingroom.svg -187 188 10 127
+::CALL :UPDATEICON 60303 scene_livingroom.svg -187 188 10 127
 ::CALL :UPDATEICON 60304 scene_making_love_clean.svg -188 246 10 139
 ::CALL :UPDATEICON 60305 scene_making_love.svg -185 226 10 145
 ::CALL :UPDATEICON 60306 scene_massage_jet.svg -189 301 10 156
 ::CALL :UPDATEICON 60307 scene_microwave_oven.svg -188 270 10 171
 ::CALL :UPDATEICON 60308 scene_night.svg -192 246 10 158
-CALL :UPDATEICON 60309 scene_office.svg -189 188 10 127
+::CALL :UPDATEICON 60309 scene_office.svg -189 188 10 127
 ::CALL :UPDATEICON 60310 scene_party.svg -209 216 10 133
 ::CALL :UPDATEICON 60311 scene_pet.svg -188 233 10 148
 ::CALL :UPDATEICON 60312 scene_pool.svg -187 292 10 194
@@ -716,19 +716,19 @@ CALL :UPDATEICON 60309 scene_office.svg -189 188 10 127
 ::CALL :UPDATEICON 60319 scene_sauna.svg -189 281 10 150
 CALL :UPDATEICON 60320 scene_scene_teach_in.svg -193 187 10 128
 ::CALL :UPDATEICON 60321 scene_scene.svg -225 195 10 129
-CALL :UPDATEICON 60322 scene_shower.svg -347 189 10 127
+::CALL :UPDATEICON 60322 scene_shower.svg -347 189 10 127
 ::CALL :UPDATEICON 60323 scene_sleeping_alternat.svg -188 388 10 274
 ::CALL :UPDATEICON 60324 scene_sleeping_twin_0_0.svg -188 254 10 160
 ::CALL :UPDATEICON 60325 scene_sleeping_twin_0_1.svg -188 254 10 160
 ::CALL :UPDATEICON 60326 scene_sleeping_twin_1_0.svg -188 254 10 160
 ::CALL :UPDATEICON 60327 scene_sleeping_twin_1_1.svg -188 254 10 160
-CALL :UPDATEICON 60328 scene_sleeping.svg -188 190 10 127
+::CALL :UPDATEICON 60328 scene_sleeping.svg -188 190 10 127
 ::CALL :UPDATEICON 60329 scene_stairs.svg -188 462 10 226
-CALL :UPDATEICON 60330 scene_storeroom.svg -187 213 10 132
+::CALL :UPDATEICON 60330 scene_storeroom.svg -187 213 10 132
 ::CALL :UPDATEICON 60331 scene_stove.svg -286 188 10 127
-CALL :UPDATEICON 60332 scene_summerhouse.svg -188 269 10 146
+::CALL :UPDATEICON 60332 scene_summerhouse.svg -188 269 10 146
 ::CALL :UPDATEICON 60333 scene_swimming.svg -188 357 10 262
-CALL :UPDATEICON 60334 scene_terrace.svg -188 189 10 127
+::CALL :UPDATEICON 60334 scene_terrace.svg -188 189 10 127
 ::CALL :UPDATEICON 60335 scene_toilet_alternat.svg -188 188 10 127
 ::CALL :UPDATEICON 60336 scene_toilet.svg -190 189 10 127
 ::CALL :UPDATEICON 60337 scene_visit_guests.svg -190 276 10 167
@@ -736,7 +736,7 @@ CALL :UPDATEICON 60334 scene_terrace.svg -188 189 10 127
 ::CALL :UPDATEICON 60339 scene_waterfall.svg -189 189 10 127
 ::CALL :UPDATEICON 60340 scene_wine_cellar.svg -188 195 10 128
 ::CALL :UPDATEICON 60341 scene_workshop.svg -189 186 10 126
-::CALL :UPDATEICON 60342 scene_x-mas.svg -243 188 10 127
+CALL :UPDATEICON 60342 scene_x-mas.svg -243 188 10 127
 ::CALL :UPDATEICON 60343 secur_alarm_alarm.svg -189 191 10 127
 ::CALL :UPDATEICON 60344 secur_alarm_disabled.svg -188 190 12 127
 ::CALL :UPDATEICON 60345 secur_alarm_enabled.svg -188 190 10 127
@@ -796,7 +796,7 @@ CALL :UPDATEICON 60355 secur_open.svg -300 192 10 128
 ::CALL :UPDATEICON 60399 time_alarm_clock_alarm_on.svg -193 194 10 128
 ::CALL :UPDATEICON 60400 time_alarm_clock_snooze.svg -193 194 11 128
 ::CALL :UPDATEICON 60401 time_alarm_clock.svg -189 219 10 141
-::CALL :UPDATEICON 60402 time_automatic.svg -188 189 10 127
+CALL :UPDATEICON 60402 time_automatic.svg -188 189 10 127
 ::CALL :UPDATEICON 60403 time_calendar.svg -188 218 10 134
 ::CALL :UPDATEICON 60404 time_clock.svg -191 190 10 128
 ::CALL :UPDATEICON 60405 time_eco_mode.svg -191 187 10 127
@@ -824,10 +824,10 @@ CALL :UPDATEICON 60355 secur_open.svg -300 192 10 128
 ::CALL :UPDATEICON 60427 vent_supply_air.svg -187 189 10 127
 ::CALL :UPDATEICON 60428 vent_used_air.svg -187 189 10 127
 ::CALL :UPDATEICON 60429 vent_ventilation_control.svg -188 191 10 127
-::CALL :UPDATEICON 60430 vent_ventilation_level_0.svg -188 187 10 132
-::CALL :UPDATEICON 60431 vent_ventilation_level_1.svg -188 187 10 132
-::CALL :UPDATEICON 60432 vent_ventilation_level_2.svg -188 187 10 132
-::CALL :UPDATEICON 60433 vent_ventilation_level_3.svg -188 187 10 132
+CALL :UPDATEICON 60430 vent_ventilation_level_0.svg -188 187 10 132
+CALL :UPDATEICON 60431 vent_ventilation_level_1.svg -188 187 10 132
+CALL :UPDATEICON 60432 vent_ventilation_level_2.svg -188 187 10 132
+CALL :UPDATEICON 60433 vent_ventilation_level_3.svg -188 187 10 132
 ::CALL :UPDATEICON 60434 vent_ventilation_level_automatic.svg -187 188 10 126
 ::CALL :UPDATEICON 60435 vent_ventilation_level_manual_m.svg -187 188 26 126
 ::CALL :UPDATEICON 60436 vent_ventilation.svg -188 187 10 132
@@ -921,7 +921,7 @@ CALL :UPDATEICON 60355 secur_open.svg -300 192 10 128
 ::CALL :UPDATEICON 60524 measure_globe.svg -199 195 110 128
 ::CALL :UPDATEICON 60525 measure_globe_lat.svg -199 195 10 128
 ::CALL :UPDATEICON 60526 measure_globe_long.svg -199 195 110 128
-::CALL :UPDATEICON 60527 message_garbage_4.svg -290 190 10 127
+CALL :UPDATEICON 60527 message_garbage_4.svg -290 190 10 127
 ::CALL :UPDATEICON 60528 message_presence_geo_active.svg -192 189 11 127
 ::CALL :UPDATEICON 60529 message_presence_geo_inactive.svg -192 189 10 127
 ::CALL :UPDATEICON 60530 sani_irrigation_automatic.svg -189 213 10 132
@@ -944,7 +944,7 @@ CALL :UPDATEICON 60355 secur_open.svg -300 192 10 128
 ::CALL :UPDATEICON 60547 scene_robo_lawnmower_attention.svg -188 189 10 127
 ::CALL :UPDATEICON 60548 scene_robo_lawnmower_charging.svg -188 189 10 127
 ::CALL :UPDATEICON 60549 scene_robo_lawnmower_paused.svg -188 189 10 127
-CALL :UPDATEICON 60550 scene_teens_room.svg -188 190 10 127
+::CALL :UPDATEICON 60550 scene_teens_room.svg -188 190 10 127
 ::CALL :UPDATEICON 60551 scene_unicorn.svg -188 191 10 128
 ::CALL :UPDATEICON 60552 time_sandglass.svg -309 189 10 127
 ::CALL :UPDATEICON 60553 weather_fog.svg -189 231 10 153
@@ -953,14 +953,14 @@ CALL :UPDATEICON 60550 scene_teens_room.svg -188 190 10 127
 ::CALL :UPDATEICON 60556 weather_night_fog.svg -188 209 10 131
 ::CALL :UPDATEICON 60557 weather_night_starry.svg -188 209 20 131
 ::CALL :UPDATEICON 60558 weather_station_generic.svg -288 189 10 127
-CALL :UPDATEICON 60559 fts_shutter_small.svg -188 188 131 127
+::CALL :UPDATEICON 60559 fts_shutter_small.svg -188 188 131 127
 ::CALL :UPDATEICON 60560 fts_shutter_vert_small.svg -188 188 130 127
 CALL :UPDATEICON 60561 light_light_dim.svg -229 189 182 127
 ::CALL :UPDATEICON 60562 sani_heating_small.svg -192 188 236 127
 ::CALL :UPDATEICON 60563 sani_irrigation_small.svg -189 213 10 132
 CALL :UPDATEICON 60564 fts_shutter_0.svg -188 280 11 178
-CALL :UPDATEICON 60565 control_zoom_in_alt.svg -190 192 10 128
-CALL :UPDATEICON 60566 control_zoom_out_alt.svg -190 192 10 128
+::CALL :UPDATEICON 60565 control_zoom_in_alt.svg -190 192 10 128
+::CALL :UPDATEICON 60566 control_zoom_out_alt.svg -190 192 10 128
 
 
 :: ========== FUNCTIONS ==========
